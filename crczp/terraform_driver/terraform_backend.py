@@ -2,8 +2,8 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
-from kypo.terraform_driver.terraform_client_elements import KypoTerraformBackendType
-from kypo.terraform_driver.terraform_exceptions import TerraformImproperlyConfigured
+from crczp.terraform_driver.terraform_client_elements import KypoTerraformBackendType
+from crczp.terraform_driver.terraform_exceptions import TerraformImproperlyConfigured
 
 TERRAFORM_STATE_FILE_NAME = 'terraform.tfstate'
 TEMPLATES_DIR_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'templates')

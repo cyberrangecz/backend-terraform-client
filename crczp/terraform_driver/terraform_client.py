@@ -1,17 +1,17 @@
 from enum import Enum
 from typing import List, Tuple
 
-from kypo.cloud_commons import KypoCloudClientBase, TopologyInstance, TransformationConfiguration, \
+from crczp.cloud_commons import KypoCloudClientBase, TopologyInstance, TransformationConfiguration, \
     Image, Limits, QuotaSet, HardwareUsage
 # Available cloud clients
-from kypo.openstack_driver import KypoOpenStackClient
-from kypo.aws_driver.aws_client import KypoAwsClient
-from kypo.topology_definition.models import TopologyDefinition, DockerContainers
+from crczp.openstack_driver import KypoOpenStackClient
+from crczp.aws_driver.aws_client import KypoAwsClient
+from crczp.topology_definition.models import TopologyDefinition, DockerContainers
 
-from kypo.terraform_driver.terraform_backend import KypoTerraformBackend
-from kypo.terraform_driver.terraform_client_elements import TerraformInstance, \
+from crczp.terraform_driver.terraform_backend import KypoTerraformBackend
+from crczp.terraform_driver.terraform_client_elements import TerraformInstance, \
     KypoTerraformBackendType
-from kypo.terraform_driver.terraform_client_manager import KypoTerraformClientManager
+from crczp.terraform_driver.terraform_client_manager import KypoTerraformClientManager
 
 
 class AvailableCloudLibraries(Enum):

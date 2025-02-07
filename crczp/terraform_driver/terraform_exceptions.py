@@ -2,7 +2,7 @@
 Module containing KYPO Terraform exceptions.
 """
 
-from kypo.cloud_commons import KypoException
+from crczp.cloud_commons import KypoException
 
 
 class TerraformImproperlyConfigured(KypoException):

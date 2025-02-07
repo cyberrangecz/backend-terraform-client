@@ -4,12 +4,12 @@ import shutil
 import subprocess
 from typing import List, Tuple
 
-from kypo.cloud_commons import KypoCloudClientBase, StackNotFound, KypoException, Image, TopologyInstance
+from crczp.cloud_commons import KypoCloudClientBase, StackNotFound, KypoException, Image, TopologyInstance
 
-from kypo.terraform_driver.terraform_client_elements import TerraformInstance
-from kypo.terraform_driver.terraform_backend import KypoTerraformBackend, TERRAFORM_STATE_FILE_NAME
-from kypo.terraform_driver.terraform_exceptions import TerraformInitFailed, TerraformWorkspaceFailed
-from kypo.terraform_driver.terraform_exc_handlers import command_error_handler
+from crczp.terraform_driver.terraform_client_elements import TerraformInstance
+from crczp.terraform_driver.terraform_backend import KypoTerraformBackend, TERRAFORM_STATE_FILE_NAME
+from crczp.terraform_driver.terraform_exceptions import TerraformInitFailed, TerraformWorkspaceFailed
+from crczp.terraform_driver.terraform_exc_handlers import command_error_handler
 
 STACKS_DIR = '/var/tmp/kypo/terraform-stacks/'
 TEMPLATE_FILE_NAME = 'deploy.tf'

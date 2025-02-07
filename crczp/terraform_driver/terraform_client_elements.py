@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Union, Dict
 
-from kypo.cloud_commons.cloud_client_elements import Image
+from crczp.cloud_commons.cloud_client_elements import Image
 
 
 class KypoTerraformBackendType(Enum):
